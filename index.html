@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pushpendra ❤️ Pooja | Wedding Invitation</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#fffaf5;
+color:#333;
+text-align:center;
+}
+
+.hero{
+height:100vh;
+background:url('cover.jpg') center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+}
+
+.overlay{
+background:rgba(0,0,0,0.45);
+padding:30px;
+border-radius:20px;
+}
+
+h1{
+font-size:3rem;
+margin:0;
+}
+
+.btn{
+background:#d4af37;
+padding:12px 25px;
+color:white;
+text-decoration:none;
+border-radius:30px;
+display:inline-block;
+margin-top:20px;
+}
+
+section{
+padding:60px 20px;
+}
+
+.gallery img{
+width:280px;
+border-radius:15px;
+margin:10px;
+}
+
+.event{
+background:white;
+margin:15px auto;
+padding:20px;
+max-width:500px;
+border-radius:15px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+footer{
+background:#222;
+color:white;
+padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+<div class="overlay">
+<h1>Pushpendra ❤️ Pooja</h1>
+<h3>Save The Date</h3>
+<p>25 January 2027</p>
+
+<div id="countdown"></div>
+
+<a href="#invite" class="btn">Open Invitation</a>
+</div>
+</div>
+
+<section id="invite">
+<h2>🙏 श्री गणेशाय नमः 🙏</h2>
+
+<p>
+हमें अत्यंत हर्ष है कि हमारे पुत्र
+<b>Pushpendra Singh</b>
+(सुपुत्र श्री Vikram Singh एवं श्रीमती Bhagwant Devi)
+
+तथा
+
+<b>Pooja</b>
+(सुपुत्री श्री Rajkumar Singh एवं श्रीमती Tulsi Devi)
+
+के शुभ विवाह समारोह में आपकी गरिमामयी उपस्थिति एवं आशीर्वाद की अपेक्षा है।
+</p>
+</section>
+
+<section>
+<h2>💑 Our Gallery</h2>
+
+<div class="gallery">
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+<img src="photo4.jpg">
+<img src="photo5.jpg">
+</div>
+</section>
+
+<section>
+<h2>🎉 Wedding Events</h2>
+
+<div class="event">
+<h3>🌼 Haldi Ceremony</h3>
+<p>23 January 2027 | 11:00 AM</p>
+</div>
+
+<div class="event">
+<h3>🌿 Mehndi Ceremony</h3>
+<p>24 January 2027 | 04:00 PM</p>
+</div>
+
+<div class="event">
+<h3>💍 Wedding Ceremony</h3>
+<p>25 January 2027 | 07:00 PM</p>
+</div>
+
+<div class="event">
+<h3>🎊 Reception</h3>
+<p>26 January 2027 | 08:00 PM</p>
+</div>
+
+</section>
+
+<section>
+<h2>📍 Venue</h2>
+
+<p>
+Omkareshwar, Madhya Pradesh
+</p>
+
+<a class="btn"
+href="https://maps.google.com"
+target="_blank">
+Get Directions
+</a>
+
+</section>
+
+<section>
+<h2>📞 RSVP</h2>
+
+<p>Mobile: 9669540760</p>
+
+<form>
+<input type="text" placeholder="Your Name"><br><br>
+<input type="number" placeholder="Guests"><br><br>
+<button class="btn">Submit</button>
+</form>
+
+</section>
+
+<footer>
+
+<h3>Pushpendra ❤️ Pooja</h3>
+
+<p>
+आपका स्नेह और आशीर्वाद ही हमारे लिए सबसे बड़ा उपहार है।
+</p>
+
+<p>
+Contact: 9669540760
+</p>
+
+</footer>
+
+<script>
+
+var countDownDate =
+new Date("Jan 25, 2027 19:00:00").getTime();
+
+var x = setInterval(function(){
+
+var now = new Date().getTime();
+
+var distance =
+countDownDate - now;
+
+var days =
+Math.floor(distance/(1000*60*60*24));
+
+var hours =
+Math.floor((distance%(1000*60*60*24))
+/(1000*60*60));
+
+var minutes =
+Math.floor((distance%(1000*60*60))
+/(1000*60));
+
+var seconds =
+Math.floor((distance%(1000*60))
+/1000);
+
+document.getElementById("countdown")
+.innerHTML =
+days+" Days "
++hours+" Hours "
++minutes+" Min "
++seconds+" Sec";
+
+},1000);
+
+</script>
+
+</body>
+</html>
